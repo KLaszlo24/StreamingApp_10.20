@@ -16,7 +16,8 @@ namespace StreamingApp
             Title = title;
             Length = length;
 
-            if (string.IsNullOrWhiteSpace(title)){
+            if (string.IsNullOrWhiteSpace(title))
+            {
                 throw new ArgumentException("A cím nem lehet üres");
             }
 
@@ -24,5 +25,6 @@ namespace StreamingApp
             {
                 throw new ArgumentException("A hossz nem lehet nulla vagy negatív");
             }
+        }
     }
 }
